@@ -1,0 +1,8 @@
+Receptor:Gokú,Mensaje:1
+Receptor:Gokú,Mensaje:2
+Receptor:Gokú,Mensaje:3
+Receptor:Trunks,Mensaje:4
+Receptor:Gokú,Mensaje:5
+Receptor:Trunks,Mensaje:6
+Receptor:Patricio,Mensaje:Hola
+Receptor:Patricio,Mensaje:¿Cómo estás?
