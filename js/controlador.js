@@ -5,12 +5,7 @@ $(document).ready(function(){
 	$("#mensaje").keyup(function(e) {
 	       if(e.keyCode == 13){
 			var msj = $("#mensaje").val();
-			var cadena1 = '<div class="row message-body"> <div class="col-sm-12 message-main-sender"><div class="sender"><div class="message-text">';
-			var cadena2 = '</div><span class="message-time pull-right">18:19</span></div></div></div>'
-			var msj1 = cadena1.concat(msj);
-			var msj2 = msj1.concat(cadena2);
 			$("#mensaje").val("");
-			$("#mensajes").append(msj2);
 			receptor = comprobarReceptor(ultAct);
 			var parametros = {
                 "receptor" : receptor,
@@ -20,7 +15,9 @@ $(document).ready(function(){
 	                data:  parametros, 
 	                url:   'mensaje.php', 
 	                type:  'post', 
-	                success:  function (response) {}
+	                success:  function (data) {
+	                	$("#mensajes0").append(data);
+	                }
 	        });
 
 		}
